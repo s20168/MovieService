@@ -1,20 +1,20 @@
-package pl.pjatk.MovieService.Model;
+package pl.pjatk.MovieService.model;
 
 public class Movie {
 
-    private String movieId;
+    private long movieId;
     private String name;
 
-    public Movie(String movieId, String name) {
+    public Movie(long movieId, String name) {
         this.movieId = movieId;
         this.name = name;
     }
 
-    public String getMovieId() {
+    public long getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(String movieId) {
+    public void setMovieId(long movieId) {
         this.movieId = movieId;
     }
 

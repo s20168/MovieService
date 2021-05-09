@@ -1,4 +1,4 @@
-package pl.pjatk.MovieService.Controller;
+package pl.pjatk.MovieService.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import pl.pjatk.MovieService.Model.Movie;
+import pl.pjatk.MovieService.model.Movie;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class MovieController {
     }
 
     @GetMapping("/Movies/{id}")
-    public Movie getMovieInfo(@PathVariable("movieId")String movieId) {
+    public Movie getMovieInfo(@PathVariable("movieId")long movieId) {
         return new Movie(movieId, "Test name");
     }
 

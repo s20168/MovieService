@@ -1,4 +1,4 @@
-package pl.pjatk.MovieService.Model;
+package pl.pjatk.MovieService.model;
 
 public enum Genre {
     Thriller,
