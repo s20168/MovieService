@@ -25,4 +25,19 @@ public class Movie {
     public void setName(String name) {
         this.name = name;
     }
+
+    public enum Genre {
+        Thriller,
+        Action,
+        Comedy,
+        Horror,
+        Drama,
+        ScienceFiction,
+    }
+
+    protected Genre genre;
+
+    public Movie(Genre g) {
+        this.genre = g;
+    }
 }
