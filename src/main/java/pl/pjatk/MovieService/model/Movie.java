@@ -4,17 +4,22 @@ public class Movie {
 
     private Long id;
     private String name;
+    private Genre genre;
 
-    public Movie(Long id, String name) {
+    public Movie(long id, String name, Genre genre) {
         this.id = id;
         this.name = name;
+        this.genre = genre;
     }
 
-    public Long getMovieId() {
+    public Movie() {
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setMovieId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -24,21 +29,6 @@ public class Movie {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public enum Genre {
-        Thriller,
-        Action,
-        Comedy,
-        Horror,
-        Drama,
-        ScienceFiction,
-    }
-
-    protected Genre genre;
-
-    public Movie(Genre g) {
-        this.genre = g;
     }
 
     public Genre getGenre() {
