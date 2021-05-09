@@ -22,7 +22,7 @@ public class MovieService {
     }
 
     public Movie updateMovie (Movie movie, Long id) {
-        return new Movie(id, movie.getName(), movie.getGenre());
+        return new Movie(movie.getId(), movie.getName(), movie.getGenre());
     }
 
     public Long deleteMovie (Long id) {
