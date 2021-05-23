@@ -3,12 +3,12 @@ package pl.pjatk.MovieService.model;
 public class Movie {
 
     private Long id;
-    private String name;
+    private String title;
     private Genre genre;
 
-    public Movie(long id, String name, Genre genre) {
+    public Movie(long id, String title, Genre genre) {
         this.id = id;
-        this.name = name;
+        this.title = title;
         this.genre = genre;
     }
 
@@ -23,12 +23,12 @@ public class Movie {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String name) {
+        this.title = name;
     }
 
     public Genre getGenre() {
